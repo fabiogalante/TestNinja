@@ -17,5 +17,17 @@ namespace TestNinja.UnitTests
             Assert.AreEqual(8, result);
             Assert.That(result, Is.EqualTo(8));
         }
+
+
+        [Test]
+        public void Max_WhenCalled_ReturnTheGreaterArgument(int a, int b)
+        {
+            var math = new Math();
+
+
+            var result = math.Max(1, 2);
+
+            Assert.That(result, Is.EqualTo(2));
+        }
     }
 }
